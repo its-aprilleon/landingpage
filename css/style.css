@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --pc: rgb(20, 19, 82);
+    --sc: rgb(109, 0, 0);
+    --fc: tomato;
+}
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+    padding: 0;
+    margin: 0;
+}
+
+/* Start header section */
+header {
+    height: 100vh;
+    background: linear-gradient(30deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+        url(./../assets/img/banner/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    position: relative;
+}
+
+/* Start Nav Bar */
+.navbar {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), var(--pc));
+    padding: 20px 30px;
+
+    transition: all 0.7s ease;
+}
+
+/* will add from javascript */
+.navmenus {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), var(--pc));
+    padding: 5px 30px;
+}
+
+.menuitems {
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1px;
+
+    transition: color 0.5s;
+}
+
+.menuitems:hover {
+    color: skyblue;
+}
+
+.lines1,
+.lines2,
+.lines3 {
+    width: 25px;
+    height: 3px;
+    margin: 6px;
+}
+
+.crossxs .lines1 {
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.crossxs .lines2 {
+    opacity: 0;
+}
+
+.crossxs .lines3 {
+    transform: rotate(45deg) translate(-6px, -6px);
+}
+/* End Nav Bar */
+
+/* Start Banner section */
+.banners {
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.bannerheaders {
+    animation-name: bnanis;
+    animation-duration: 2s;
+}
+
+.bannerparagraphs {
+    animation-name: bnanis;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes bnanis {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* End Banner section */
+
+/* End header section */
+
+/* Start About us section */
+.aboutuss {
+    background: linear-gradient(30deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+        url(./../assets/img/banner/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    position: relative;
+}
+
+.aboutuss .lines {
+    width: 30%;
+    height: 1.2px;
+    background-color: #fff;
+    margin-bottom: 3px;
+}
+
+.aboutuss .lines:nth-of-type(2) {
+    width: 20%;
+    height: 1px;
+}
+
+.aboutuss .lines:nth-of-type(3) {
+    width: 10%;
+    height: 0.5px;
+    margin-bottom: 30px;
+}
+
+.aboutuss h5 {
+    background-color: #f4f4f4;
+    color: #000;
+    border-left: 5px solid var(--fc);
+    padding: 10px;
+}
+
+.aboutuss h5 ~ p {
+    margin: 30px 0;
+}
+
+.aboutuss img {
+    width: 350px;
+
+    position: absolute;
+    bottom: 0;
+}
+/* End about us */
+
+/* Start Property Session */
+
+.titles {
+    text-transform: uppercase;
+    /* background-color: steelblue; */
+
+    display: inline;
+    padding: 5px 20px;
+
+    position: relative;
+}
+
+.titles::before,
+.titles::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    /* background-color: yellow; */
+
+    position: absolute;
+}
+
+.titles::before {
+    left: 0;
+    bottom: 0;
+    border-left: 3px solid var(--fc);
+    border-bottom: 3px solid var(--fc);
+}
+
+.titles::after {
+    right: 0;
+    top: 0;
+    border-right: 3px solid var(--fc);
+    border-top: 3px solid var(--fc);
+}
+
+.propertylists {
+    color: #777;
+    cursor: pointer;
+    user-select: none;
+}
+
+.activeitems {
+    color: var(--pc);
+}
+
+/* END Property Session */
+
+/* START adv Session */
+
+.missions {
+    background-color: var(--pc);
+}
+
+.advimages {
+    width: 400px;
+}
+
+.fromlefts {
+    animation-name: fromleftani;
+    animation-duration: 3s;
+}
+
+@keyframes fromleftani {
+    from {
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.fromrights {
+    animation-name: fromrightani;
+    animation-duration: 3s;
+}
+
+@keyframes fromrightani {
+    0% {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* END adv Session */
