@@ -26,26 +26,25 @@ $(document).ready(function () {
 
         // const filtervalue = $(this).attr('data-filter');
         const filtervalue = $(this).data('filter');
-
-        // console.log(filtervalue);
+        console.log(filtervalue);
 
         if (filtervalue === 'all') {
             $('.filters').show('slide', 500);
         } else {
             // method 1
-            $('.filters').hide('slide', 500);
-            $('.filters')
-                .filter('.' + filtervalue)
-                .show('slide', 500);
-
-            // method 2
-            //  $('.filters')
-            //      .not('.' + filtervalue)
-            //      .hide();
-
+            // $('.filters').hide('slide', 500);
             // $('.filters')
             //     .filter('.' + filtervalue)
-            //     .show();
+            //     .show('slide', 500);
+
+            // method 2
+             $('.filters')
+                 .not('.' + filtervalue)
+                 .hide();
+
+            $('.filters')
+                .filter('.' + filtervalue)
+                .show();
         }
     });
 
