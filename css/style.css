@@ -374,5 +374,48 @@ ul.clientlists img {
     background-position: center;
     background-attachment: fixed;
 }
-
 /* End Customer Session */
+
+/* Start Quotation Session */
+.quotes {
+    background-color: var(--pc);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: -30px;
+    padding: 30px 50px;
+}
+
+.phoneicons {
+    width: 30px;
+}
+
+.quotes .infos {
+    display: flex;
+}
+
+.quotes .btn-calls {
+    width: 170px;
+    height: 50px;
+    background-color: var(--sc);
+    color: #fff;
+    font-size: 15px;
+
+    border-radius: 100px;
+    line-height: 50px;
+
+    padding: 0;
+
+    transform: translateY(-1px);
+
+    transition: all 0.3s;
+}
+
+.quotes .btn-calls:hover {
+    transform: translateY(0);
+    box-shadow: -3px 3px 3px #444;
+}
+
+/* End Quotation Session */
