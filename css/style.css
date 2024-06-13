@@ -438,4 +438,70 @@ ul.clientlists img {
     background-attachment: fixed;
 }
 
+.contacts .inputs {
+    background-color: transparent;
+    color: #fff;
+    border-color: transparent;
+    border-bottom: 2px solid #ccc;
+    border-radius: 10px;
+
+    transition: all 0.8s;
+}
+
+.contacts .inputs:focus {
+    /* outline: none; */
+    box-shadow: none;
+    border-bottom: 2px solid var(--sc);
+    border-radius: 10px;
+}
+
+.inputs.inputs:placeholder {
+    color: rgba(255, 255, 255), 0.5;
+}
+
+.labels {
+    color: red;
+    display: block;
+
+    margin-top: -60px;
+    margin-left: 15px;
+}
+
+.inputs:placeholder-shown + .labels {
+    /* opacity: 0; */
+    visibility: hidden;
+}
+
+.submit-btns {
+    background-color: var(--sc);
+    color: #fff;
+    border: none;
+    outline: none;
+
+    transition: all 0.3s;
+}
+
+.submit-btns:hover {
+    background-color: var(--pc);
+    color: #fff;
+}
 /* End Contact Session */
+
+/* Start Footer Session */
+.footerlinks {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 13px;
+
+    transition: all 0.3s;
+}
+
+.footerlinks:hover {
+    color: orange;
+    letter-spacing: 1px;
+
+    /* text-decoration: underline; */
+    border-bottom: 1px solid orange;
+}
+
+/* End Footer Session */
