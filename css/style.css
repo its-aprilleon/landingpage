@@ -35,6 +35,51 @@ body {
 }
 /* End Back to Top section */
 
+/* Start Sticky Note */
+.sticknotes a {
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    /* background-color: steelblue; */
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+
+    position: absolute;
+    left: -80px;
+
+    transition: left 0.3s;
+
+    z-index: 100;
+
+    padding: 15px;
+}
+
+.sticknotes a:hover {
+    left: 0;
+}
+
+.sticknotes .about {
+    top: 200px;
+    background-color: green;
+}
+
+.sticknotes .blog {
+    top: 260px;
+    background-color: steelblue;
+}
+
+.sticknotes .news {
+    top: 320px;
+    background-color: var(--fc);
+}
+
+.sticknotes .contact {
+    top: 380px;
+    background-color: var(--sc);
+}
+
+/* Start Sticky Note */
+
 /* Start header section */
 header {
     height: 100vh;
@@ -470,8 +515,8 @@ ul.clientlists img {
     border-radius: 10px;
 }
 
-.inputs.inputs:placeholder {
-    color: rgba(255, 255, 255), 0.5;
+.inputs::placeholder {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .labels {
