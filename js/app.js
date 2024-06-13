@@ -1,4 +1,21 @@
 $(document).ready(function () {
+    // Start Back to Top section
+
+    $('.btn-backtotops').hide();
+
+    $(window).scroll(function () {
+        let getscrolltop = $(this).scrollTop();
+        // console.log(getscrolltop);
+
+        if (getscrolltop >= 370) {
+            $('.btn-backtotops').fadeIn(1000);
+        } else {
+            $('.btn-backtotops').fadeOut(1000);
+        }
+    });
+
+    // End Back to Top section
+
     // Start navbar
 
     $(window).scroll(function () {
@@ -38,9 +55,9 @@ $(document).ready(function () {
             //     .show('slide', 500);
 
             // method 2
-             $('.filters')
-                 .not('.' + filtervalue)
-                 .hide();
+            $('.filters')
+                .not('.' + filtervalue)
+                .hide();
 
             $('.filters')
                 .filter('.' + filtervalue)
@@ -66,4 +83,13 @@ $(document).ready(function () {
     });
 
     // end adv section
+
+    // Start Footer
+
+    const year = document.getElementById('getyear');
+    const getfullyear = new Date().getFullYear();
+
+    year.innerText = getfullyear;
+
+    // End Footer
 });

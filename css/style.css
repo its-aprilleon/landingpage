@@ -20,6 +20,21 @@ body {
     margin: 0;
 }
 
+/* Start Back to Top section */
+.btn-backtotops {
+    background-color: var(--sc);
+    color: #fff;
+    border-radius: 10px;
+
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+    z-index: 100;
+    padding: 10px;
+}
+/* End Back to Top section */
+
 /* Start header section */
 header {
     height: 100vh;
