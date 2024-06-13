@@ -1,396 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- bootstrap css1 js 1 -->
+        <link rel="stylesheet" href="./assets/libs/bootstrap-5.3.2-dist/css/bootstrap.min.css" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- bootstrap css1 js 1 -->
-    <link rel="stylesheet" href="./assets/libs/bootstrap-5.3.2-dist/css/bootstrap.min.css" />
+        <!-- fontawesome css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- fontawesome css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- jqueryui css1 js1 -->
+        <link rel="stylesheet" href="./assets/libs/jquery-ui-1.13.2/jquery-ui.min.css" />
 
-    <!-- jqueryui css1 js1 -->
-    <link rel="stylesheet" href="./assets/libs/jquery-ui-1.13.2/jquery-ui.min.css" />
+        <!-- lightbox css1 js1 -->
+        <link rel="stylesheet" href="./assets/libs/lightbox2-2.11.4/dist/css/lightbox.min.css" />
 
-    <!-- lightbox css1 js1 -->
-    <link rel="stylesheet" href="./assets/libs/lightbox2-2.11.4/dist/css/lightbox.min.css" />
+        <!-- custom css -->
+        <link rel="stylesheet" href="./css/style.css" type="text/css" />
 
-    <!-- custom css -->
-    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+        <!-- favicon -->
+        <link rel="icon" href="./assets/img/fav/favicon.png" type="image/png" sizes="16x16" />
 
-    <!-- favicon -->
-    <link rel="icon" href="./assets/img/fav/favicon.png" type="image/png" sizes="16x16" />
+        <title>Plannco Home Decoration</title>
+    </head>
 
-    <title>Plannco Home Decoration</title>
-</head>
+    <body>
+        <!-- Start Back to Top -->
 
-<body>
-    <!-- Start Back to Top -->
+        <div></div>
 
-    <div></div>
+        <!-- End Back to Top -->
 
-    <!-- End Back to Top -->
+        <!-- Start Header Session -->
+        <header>
+            <!-- Start Nav Bar -->
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <a href="index.html" class="navbar-brand text-light mx-3">
+                    <img src="./assets/img/fav/favicon.png" alt="favicon" width="70" />
+                    <span class="text-uppercase h2 fw-bold mx-2"> Plannco <span class="h3">Home Decoration</span> </span>
+                </a>
 
-    <!-- Start Header Session -->
-    <header>
-        <!-- Start Nav Bar -->
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <a href="index.html" class="navbar-brand text-light mx-3">
-                <img src="./assets/img/fav/favicon.png" alt="favicon" width="70" />
-                <span class="text-uppercase h2 fw-bold mx-2">
-                    Plannco <span class="h3">Home Decoration</span>
-                </span>
-            </a>
+                <button type="button" class="navbar-toggler navbuttons" data-bs-toggle="collapse" data-bs-target="#nav">
+                    <div class="bg-light lines1"></div>
+                    <div class="bg-light lines2"></div>
+                    <div class="bg-light lines3"></div>
+                </button>
 
-            <button type="button" class="navbar-toggler navbuttons" data-bs-toggle="collapse" data-bs-target="#nav">
-                <div class="bg-light lines1"></div>
-                <div class="bg-light lines2"></div>
-                <div class="bg-light lines3"></div>
-            </button>
-
-            <div id="nav" class="navbar-collapse collapse justify-content-end text-uppercase fw-bold">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="javascript:void(0);" class="nav-link mx-2 menuitems">
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="javascript:void(0);" class="nav-link mx-2 menuitems">
-                            About Us
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="javascript:void(0);" class="nav-link mx-2 menuitems">
-                            Porperties
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="javascript:void(0);" class="nav-link mx-2 menuitems">
-                            Services
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="javascript:void(0);" class="nav-link mx-2 menuitems">
-                            Customers
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="javascript:void(0);" class="nav-link mx-2 menuitems">
-                            Furniture
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="javascript:void(0);" class="nav-link mx-2 menuitems">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- End Nav Bar -->
-
-        <!-- Start Banner -->
-        <div class="text-light text-center text-md-end banners">
-            <h1 class="display-4 bannerheaders">
-                Welcome to
-                <span class="display-3 text-uppercase">PLANNCO</span> Home
-                Decoration Co.,Ltd
-            </h1>
-            <p class="lead bannerparagraphs">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-        </div>
-        <!-- End Banner -->
-    </header>
-    <!-- End Header Session -->
-
-    <!-- Start Aboutus Session -->
-    <section class="py-5 aboutuss">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <img src="./assets/img/users/staffgirl1.png" alt="staffgirl1" />
+                <div id="nav" class="navbar-collapse collapse justify-content-end text-uppercase fw-bold">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link mx-2 menuitems"> Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link mx-2 menuitems"> About Us </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link mx-2 menuitems"> Porperties </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link mx-2 menuitems"> Services </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link mx-2 menuitems"> Customers </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link mx-2 menuitems"> Furniture </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link mx-2 menuitems"> Contact </a>
+                        </li>
+                    </ul>
                 </div>
+            </nav>
+            <!-- End Nav Bar -->
 
-                <div class="col-sm-6 text-white">
-                    <div class="col-md-12">
-                        <h2 class="text-uppercase">Who are we !!!</h2>
-                        <div class="lines"></div>
-                        <div class="lines"></div>
-                        <div class="lines"></div>
+            <!-- Start Banner -->
+            <div class="text-light text-center text-md-end banners">
+                <h1 class="display-4 bannerheaders">
+                    Welcome to
+                    <span class="display-3 text-uppercase">PLANNCO</span> Home Decoration Co.,Ltd
+                </h1>
+                <p class="lead bannerparagraphs">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <!-- End Banner -->
+        </header>
+        <!-- End Header Session -->
+
+        <!-- Start Aboutus Session -->
+        <section class="py-5 aboutuss">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="./assets/img/users/staffgirl1.png" alt="staffgirl1" />
                     </div>
 
-                    <h5>
-                        <i>
-                            Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit.
-                        </i>
-                    </h5>
+                    <div class="col-sm-6 text-white">
+                        <div class="col-md-12">
+                            <h2 class="text-uppercase">Who are we !!!</h2>
+                            <div class="lines"></div>
+                            <div class="lines"></div>
+                            <div class="lines"></div>
+                        </div>
 
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Consequatur molestias minus repellendus
-                        excepturi est optio itaque eius accusantium sed
-                        reiciendis dignissimos nisi, natus cum harum ab ipsa
-                        dolore praesentium voluptate?
-                    </p>
+                        <h5>
+                            <i> Lorem ipsum dolor sit amet consectetur adipisicing elit. </i>
+                        </h5>
 
-                    <a href="javascript:void(0);" class="btn btn-danger rounded-0">Read Me</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestias minus repellendus excepturi est optio itaque eius accusantium sed reiciendis dignissimos nisi, natus cum harum ab ipsa dolore praesentium voluptate?</p>
+
+                        <a href="javascript:void(0);" class="btn btn-danger rounded-0">Read Me</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- End Aboutus Session -->
+        </section>
+        <!-- End Aboutus Session -->
 
-    <!-- Start Property Session -->
-    <section class="py-5">
-        <div class="container-fluid">
-            <!-- start title -->
-            <div class="text-center mb-3">
-                <div class="col">
-                    <h3 class="titles">Porperties</h3>
-                </div>
-            </div>
-            <!-- end title -->
-
-            <ul class="list-inline text-center text-uppercase fw-bold">
-                <li class="list-inline-item propertylists activeitems" data-filter="all">
-                    All <span class="mx-3 mx-md-5 text-muted">/</span>
-                </li>
-
-                <li class="list-inline-item propertylists" data-filter="house">
-                    House <span class="mx-3 mx-md-5 text-muted">/</span>
-                </li>
-
-                <li class="list-inline-item propertylists" data-filter="decoration">
-                    Decoration
-                    <span class="mx-3 mx-md-5 text-muted">/</span>
-                </li>
-
-                <li class="list-inline-item propertylists" data-filter="fur niture">
-                    Funiture <span class="mx-3 mx-md-5 text-muted">/</span>
-                </li>
-
-                <li class="list-inline-item propertylists" data-filter="office">
-                    Office
-                </li>
-            </ul>
-
+        <!-- Start Property Session -->
+        <section class="py-5">
             <div class="container-fluid">
-                <div class="d-flex flex-wrap justify-content-center">
-                    <div class="filters house">
-                        <a href="./assets/img/gallery/image1.jpg" data-lightbox="property" data-title="Image 1"><img
-                                src="./assets/img/gallery/image1.jpg" alt="image 1" width="200" /></a>
+                <!-- start title -->
+                <div class="text-center mb-3">
+                    <div class="col">
+                        <h3 class="titles">Porperties</h3>
                     </div>
+                </div>
+                <!-- end title -->
 
-                    <div class="filters house">
-                        <a href="./assets/img/gallery/image2.jpg" data-lightbox="property" data-title="Image 2"><img
-                                src="./assets/img/gallery/image2.jpg" alt="image 2" width="200" /></a>
-                    </div>
+                <ul class="list-inline text-center text-uppercase fw-bold">
+                    <li class="list-inline-item propertylists activeitems" data-filter="all">All <span class="mx-3 mx-md-5 text-muted">/</span></li>
 
-                    <div class="filters house">
-                        <a href="./assets/img/gallery/image3.jpg" data-lightbox="property" data-title="Image 3"><img
-                                src="./assets/img/gallery/image3.jpg" alt="image 3" width="200" /></a>
-                    </div>
+                    <li class="list-inline-item propertylists" data-filter="house">House <span class="mx-3 mx-md-5 text-muted">/</span></li>
 
-                    <div class="filters decoration">
-                        <a href="./assets/img/gallery/image4.jpg" data-lightbox="property" data-title="Image 4"><img
-                                src="./assets/img/gallery/image4.jpg" alt="image 4" width="200" /></a>
-                    </div>
+                    <li class="list-inline-item propertylists" data-filter="decoration">
+                        Decoration
+                        <span class="mx-3 mx-md-5 text-muted">/</span>
+                    </li>
 
-                    <div class="filters decoration">
-                        <a href="./assets/img/gallery/image5.jpg" data-lightbox="property" data-title="Image 5"><img
-                                src="./assets/img/gallery/image5.jpg" alt="image 5" width="200" /></a>
-                    </div>
+                    <li class="list-inline-item propertylists" data-filter="fur niture">Funiture <span class="mx-3 mx-md-5 text-muted">/</span></li>
 
-                    <div class="filters decoration">
-                        <a href="./assets/img/gallery/image6.jpg" data-lightbox="property" data-title="Image 6"><img
-                                src="./assets/img/gallery/image6.jpg" alt="image 6" width="200" /></a>
-                    </div>
+                    <li class="list-inline-item propertylists" data-filter="office">Office</li>
+                </ul>
 
-                    <div class="filters furniture">
-                        <a href="./assets/img/gallery/image7.jpg" data-lightbox="property" data-title="Image 7"><img
-                                src="./assets/img/gallery/image7.jpg" alt="image 7" width="200" /></a>
-                    </div>
+                <div class="container-fluid">
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <div class="filters house">
+                            <a href="./assets/img/gallery/image1.jpg" data-lightbox="property" data-title="Image 1"><img src="./assets/img/gallery/image1.jpg" alt="image 1" width="200" /></a>
+                        </div>
 
-                    <div class="filters furniture">
-                        <a href="./assets/img/gallery/image8.jpg" data-lightbox="property" data-title="Image 8"><img
-                                src="./assets/img/gallery/image8.jpg" alt="image 8" width="200" /></a>
-                    </div>
+                        <div class="filters house">
+                            <a href="./assets/img/gallery/image2.jpg" data-lightbox="property" data-title="Image 2"><img src="./assets/img/gallery/image2.jpg" alt="image 2" width="200" /></a>
+                        </div>
 
-                    <div class="filters furniture">
-                        <a href="./assets/img/gallery/image9.jpg" data-lightbox="property" data-title="Image 9"><img
-                                src="./assets/img/gallery/image9.jpg" alt="image 9" width="200" /></a>
-                    </div>
+                        <div class="filters house">
+                            <a href="./assets/img/gallery/image3.jpg" data-lightbox="property" data-title="Image 3"><img src="./assets/img/gallery/image3.jpg" alt="image 3" width="200" /></a>
+                        </div>
 
-                    <div class="filters office">
-                        <a href="./assets/img/gallery/image1.jpg" data-lightbox="property" data-title="Image 10"><img
-                                src="./assets/img/gallery/image1.jpg" alt="image 10" width="200" /></a>
-                    </div>
+                        <div class="filters decoration">
+                            <a href="./assets/img/gallery/image4.jpg" data-lightbox="property" data-title="Image 4"><img src="./assets/img/gallery/image4.jpg" alt="image 4" width="200" /></a>
+                        </div>
 
-                    <div class="filters office">
-                        <a href="./assets/img/gallery/image2.jpg" data-lightbox="property" data-title="Image 11"><img
-                                src="./assets/img/gallery/image2.jpg" alt="image 11" width="200" /></a>
-                    </div>
+                        <div class="filters decoration">
+                            <a href="./assets/img/gallery/image5.jpg" data-lightbox="property" data-title="Image 5"><img src="./assets/img/gallery/image5.jpg" alt="image 5" width="200" /></a>
+                        </div>
 
-                    <div class="filters office">
-                        <a href="./assets/img/gallery/image3.jpg" data-lightbox="property" data-title="Image 12"><img
-                                src="./assets/img/gallery/image3.jpg" alt="image 12" width="200" /></a>
-                    </div>
+                        <div class="filters decoration">
+                            <a href="./assets/img/gallery/image6.jpg" data-lightbox="property" data-title="Image 6"><img src="./assets/img/gallery/image6.jpg" alt="image 6" width="200" /></a>
+                        </div>
 
-                    <div class="filters decoration">
-                        <a href="./assets/img/gallery/image4.jpg" data-lightbox="property" data-title="Image 13"><img
-                                src="./assets/img/gallery/image4.jpg" alt="image 13" width="200" /></a>
-                    </div>
+                        <div class="filters furniture">
+                            <a href="./assets/img/gallery/image7.jpg" data-lightbox="property" data-title="Image 7"><img src="./assets/img/gallery/image7.jpg" alt="image 7" width="200" /></a>
+                        </div>
 
-                    <div class="filters decoration">
-                        <a href="./assets/img/gallery/image5.jpg" data-lightbox="property" data-title="Image 14"><img
-                                src="./assets/img/gallery/image5.jpg" alt="image 14" width="200" /></a>
-                    </div>
+                        <div class="filters furniture">
+                            <a href="./assets/img/gallery/image8.jpg" data-lightbox="property" data-title="Image 8"><img src="./assets/img/gallery/image8.jpg" alt="image 8" width="200" /></a>
+                        </div>
 
-                    <div class="filters house">
-                        <a href="./assets/img/gallery/image6.jpg" data-lightbox="property" data-title="Image 15"><img
-                                src="./assets/img/gallery/image6.jpg" alt="image 15" width="200" /></a>
-                    </div>
+                        <div class="filters furniture">
+                            <a href="./assets/img/gallery/image9.jpg" data-lightbox="property" data-title="Image 9"><img src="./assets/img/gallery/image9.jpg" alt="image 9" width="200" /></a>
+                        </div>
 
-                    <div class="filters furniture">
-                        <a href="./assets/img/gallery/image7.jpg" data-lightbox="property" data-title="Image 16"><img
-                                src="./assets/img/gallery/image7.jpg" alt="image 16" width="200" /></a>
+                        <div class="filters office">
+                            <a href="./assets/img/gallery/image1.jpg" data-lightbox="property" data-title="Image 10"><img src="./assets/img/gallery/image1.jpg" alt="image 10" width="200" /></a>
+                        </div>
+
+                        <div class="filters office">
+                            <a href="./assets/img/gallery/image2.jpg" data-lightbox="property" data-title="Image 11"><img src="./assets/img/gallery/image2.jpg" alt="image 11" width="200" /></a>
+                        </div>
+
+                        <div class="filters office">
+                            <a href="./assets/img/gallery/image3.jpg" data-lightbox="property" data-title="Image 12"><img src="./assets/img/gallery/image3.jpg" alt="image 12" width="200" /></a>
+                        </div>
+
+                        <div class="filters decoration">
+                            <a href="./assets/img/gallery/image4.jpg" data-lightbox="property" data-title="Image 13"><img src="./assets/img/gallery/image4.jpg" alt="image 13" width="200" /></a>
+                        </div>
+
+                        <div class="filters decoration">
+                            <a href="./assets/img/gallery/image5.jpg" data-lightbox="property" data-title="Image 14"><img src="./assets/img/gallery/image5.jpg" alt="image 14" width="200" /></a>
+                        </div>
+
+                        <div class="filters house">
+                            <a href="./assets/img/gallery/image6.jpg" data-lightbox="property" data-title="Image 15"><img src="./assets/img/gallery/image6.jpg" alt="image 15" width="200" /></a>
+                        </div>
+
+                        <div class="filters furniture">
+                            <a href="./assets/img/gallery/image7.jpg" data-lightbox="property" data-title="Image 16"><img src="./assets/img/gallery/image7.jpg" alt="image 16" width="200" /></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- End Property Session -->
+        </section>
+        <!-- End Property Session -->
 
-    <!-- Start Adv Session -->
-    <section class="py-5 missions">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5">
-                    <img src="./assets/img/etc/building4.png" class="homeimgs fromlefts adimages" alt="building4" />
-                </div>
-
-                <div class="col-lg-7 text-white text-center text-lg-end fromrights advtexts">
-                    <h1>
-                        What is Plannco & how we started our business in
-                        Myanmar
-                    </h1>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Odit id totam at sapiente deleniti quae neque
-                        explicabo praesentium, consectetur eaque officia ab
-                        facere aut exercitationem, reiciendis eos quia
-                        dignissimos vero.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Adv Session -->
-
-    <!-- Start Services Session -->
-    <section class="p-4 services">
-        <div class="container-fluid">
-            <!-- start title -->
-            <div class="text-center mb-3">
-                <div class="col">
-                    <h3 class="titles">Services</h3>
-                    <p class="text-light lead">
-                        Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Quos, necessitatibus!
-                    </p>
-                </div>
-            </div>
-            <!-- end title -->
-
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                    <div class="border-0 card servicecards">
-                        <img src="./assets/img/gallery/image1.jpg" alt="image1" />
-                        <h5 class="text-white text-uppercase fw-bold p-2 headings">Living Room</h5>
+        <!-- Start Adv Session -->
+        <section class="py-5 missions">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <img src="./assets/img/etc/building4.png" class="homeimgs fromlefts adimages" alt="building4" />
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                    <div class="border-0 card servicecards">
-                        <img src="./assets/img/gallery/image2.jpg" alt="image2" />
-                        <h5 class="text-white text-uppercase fw-bold p-2 headings">Mini Bar</h5>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                    <div class="border-0 card servicecards">
-                        <img src="./assets/img/gallery/image3.jpg" alt="image3" />
-                        <h5 class="text-white text-uppercase fw-bold p-2 headings">Dining Room</h5>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                    <div class="border-0 card servicecards">
-                        <img src="./assets/img/gallery/image4.jpg" alt="image4" />
-                        <h5 class="text-white text-uppercase fw-bold p-2 headings">Meeting Room</h5>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                    <div class="border-0 card servicecards">
-                        <img src="./assets/img/gallery/image5.jpg" alt="image5" />
-                        <h5 class="text-white text-uppercase fw-bold p-2 headings">Bed Room</h5>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                    <div class="border-0 card servicecards">
-                        <img src="./assets/img/gallery/image6.jpg" alt="image6" />
-                        <h5 class="text-white text-uppercase fw-bold p-2 headings">Pantry Room</h5>
+                    <div class="col-lg-7 text-white text-center text-lg-end fromrights advtexts">
+                        <h1>What is Plannco & how we started our business in Myanmar</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit id totam at sapiente deleniti quae neque explicabo praesentium, consectetur eaque officia ab facere aut exercitationem, reiciendis eos quia dignissimos vero.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- End Services Session -->
+        </section>
+        <!-- End Adv Session -->
 
-    <!-- Start Client Session -->
-    <section></section>
-    <!-- End Client Session -->
+        <!-- Start Services Session -->
+        <section class="p-4 services">
+            <div class="container-fluid">
+                <!-- start title -->
+                <div class="text-center mb-3">
+                    <div class="col">
+                        <h3 class="text-white titles">Our Services</h3>
+                        <p class="text-light lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, necessitatibus!</p>
+                    </div>
+                </div>
+                <!-- end title -->
 
-    <!-- Start Quotation Session -->
-    <section></section>
-    <!-- End Quotation Session -->
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="border-0 card servicecards">
+                            <img src="./assets/img/gallery/image1.jpg" alt="image1" />
+                            <h5 class="text-white text-uppercase fw-bold p-2 headings">Living Room</h5>
+                        </div>
+                    </div>
 
-    <!-- Start Furniture Session -->
-    <section></section>
-    <!-- End Furniture Session -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="border-0 card servicecards">
+                            <img src="./assets/img/gallery/image2.jpg" alt="image2" />
+                            <h5 class="text-white text-uppercase fw-bold p-2 headings">Mini Bar</h5>
+                        </div>
+                    </div>
 
-    <!-- Start Contact Session -->
-    <section></section>
-    <!-- End Contact Session -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="border-0 card servicecards">
+                            <img src="./assets/img/gallery/image3.jpg" alt="image3" />
+                            <h5 class="text-white text-uppercase fw-bold p-2 headings">Dining Room</h5>
+                        </div>
+                    </div>
 
-    <!-- Start Footer Session -->
-    <footer></footer>
-    <!-- End Footer Session -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="border-0 card servicecards">
+                            <img src="./assets/img/gallery/image4.jpg" alt="image4" />
+                            <h5 class="text-white text-uppercase fw-bold p-2 headings">Meeting Room</h5>
+                        </div>
+                    </div>
 
-    <!-- bootstrap css1 js1 -->
-    <script src="./assets/libs/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="border-0 card servicecards">
+                            <img src="./assets/img/gallery/image5.jpg" alt="image5" />
+                            <h5 class="text-white text-uppercase fw-bold p-2 headings">Bed Room</h5>
+                        </div>
+                    </div>
 
-    <!-- jQuery -->
-    <script src="./assets/libs/jquery/jquery-3.7.1.min.js"></script>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="border-0 card servicecards">
+                            <img src="./assets/img/gallery/image6.jpg" alt="image6" />
+                            <h5 class="text-white text-uppercase fw-bold p-2 headings">Pantry Room</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Services Session -->
 
-    <!-- jqueryui css1 js1 -->
-    <script src="./assets/libs/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+        <!-- Start Client Session -->
+        <section class="p3">
+            <div class="container-fluid">
+                <!-- start title -->
+                <div class="text-center mb-3">
+                    <div class="col">
+                        <h3 class="titles">Satisfied Clients</h3>
+                        <p class="text-light lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, necessitatibus!</p>
+                    </div>
+                </div>
+                <!-- end title -->
 
-    <!-- lightbox css1 js1 -->
-    <script src="./assets/libs/lightbox2-2.11.4/dist/js/lightbox.min.js"></script>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="clientlists">
+                            <li>
+                                <img src="./assets/img/clients/client1.png" alt="client1" />
+                            </li>
+                            <li>
+                                <img src="./assets/img/clients/client2.png" alt="client2" />
+                            </li>
+                            <li>
+                                <img src="./assets/img/clients/client3.png" alt="client3" />
+                            </li>
+                            <li>
+                                <img src="./assets/img/clients/client4.png" alt="client4" />
+                            </li>
+                            <li>
+                                <img src="./assets/img/clients/client5.png" alt="client5" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Client Session -->
 
-    <!-- custom js -->
-    <script src="./js/app.js" type="text/javascript"></script>
-</body>
+        <!-- Start Customer Session -->
+        <section class="py-3 customers">
+            <div class="container-fluid">
+                <!-- start title -->
+                <div class="text-center mb-3">
+                    <div class="col">
+                        <h3 class="text-light titles">What customers say?</h3>
+                    </div>
+                </div>
+                <!-- end title -->
 
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                        <div id="customercarousels" class="carousel slide" data-bs-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li class="active" data-bs-target="#customercarousels" data-bs-slide-to="0">1</li>
+                                <li data-bs-target="#customercarousels" data-bs-slide-to="1">2</li>
+                                <li data-bs-target="#customercarousels" data-bs-slide-to="2">3</li>
+                            </ol>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item text-center active">
+                                    <div>
+                                        <img src="./assets/img/users/user1.jpg" class="rounded-circle" alt="user1" />
+                                        <blockquote class="text-light">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, quos?</p>
+                                        </blockquote>
+                                        <h5 class="text-white text-upprcase fw-bold mb-3">Ms.July</h5>
+                                        <ul class="list-inline mb-5">
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item text-center">
+                                    <div>
+                                        <img src="./assets/img/users/user2.jpg" class="rounded-circle" alt="user2" />
+                                        <blockquote class="text-light">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, quos?</p>
+                                        </blockquote>
+                                        <h5 class="text-white text-upprcase fw-bold mb-3">Mr.Anton</h5>
+                                        <ul class="list-inline mb-5">
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item text-center">
+                                    <div>
+                                        <img src="./assets/img/users/user3.jpg" class="rounded-circle" alt="user3" />
+                                        <blockquote class="text-light">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, quos?</p>
+                                        </blockquote>
+                                        <h5 class="text-white text-upprcase fw-bold mb-3">Ms.Yoon</h5>
+                                        <ul class="list-inline mb-5">
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                            <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Customer Session -->
+
+        <!-- Start Quotation Session -->
+        <section>
+            <div class="container">
+                <div class="quotes">
+                    <div class="infos">
+                        <div>
+                            <img src="./assets/img/icon/phoneicon.png" class="phoneicons" alt="phoneicon" />
+                        </div>
+                        <div class="text-white">
+                            <h2 class="fw-bold text-uppercase">Request A Free Quote</h2>
+                            <p class="lead"></p>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="tel:09254771894" class="btn btn-calls">Call Now <i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Quotation Session -->
+
+        <!-- Start Furniture Session -->
+        <section></section>
+        <!-- End Furniture Session -->
+
+        <!-- Start Contact Session -->
+        <section></section>
+        <!-- End Contact Session -->
+
+        <!-- Start Footer Session -->
+        <footer></footer>
+        <!-- End Footer Session -->
+
+        <!-- bootstrap css1 js1 -->
+        <script src="./assets/libs/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- jQuery -->
+        <script src="./assets/libs/jquery/jquery-3.7.1.min.js"></script>
+
+        <!-- jqueryui css1 js1 -->
+        <script src="./assets/libs/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+
+        <!-- lightbox css1 js1 -->
+        <script src="./assets/libs/lightbox2-2.11.4/dist/js/lightbox.min.js"></script>
+
+        <!-- custom js -->
+        <script src="./js/app.js" type="text/javascript"></script>
+    </body>
 </html>
 
 <!-- 6st -->
